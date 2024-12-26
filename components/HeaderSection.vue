@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green-500 p-4 w-full">
-    <h1>This is a header</h1>
+  <section class="w-full h-[10vh]">
+    <h1 class="font-bold text-4xl">Dashboard</h1>
   </section>
 </template>

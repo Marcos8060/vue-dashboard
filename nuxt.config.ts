@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/css/main.css',
+    'primeicons/primeicons.css'
+  ],
+  
 
   postcss: {
     plugins: {
@@ -11,4 +15,5 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-12-25',
+  modules: ['@nuxt/icon'],
 })
