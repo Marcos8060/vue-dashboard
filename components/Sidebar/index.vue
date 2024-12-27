@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import logo from '../../assets/images/logo.svg'
 
 const menus = ref([
   {
@@ -24,12 +25,12 @@ const menus = ref([
 </script>
 
 <template>
-  <section>
-    <div class="h-[10vh]">
-      <h1 class="font-bold text-3xl">Logo</h1>
+  <section class="">
+    <div class="h-[10vh] flex justify-center items-center">
+      <img :src="logo" alt="LOGO">
     </div>
-    <ul class="grid gap-4">
-      <li v-for="menu in menus" :key="menu.id" class="flex items-center gap-4">
+    <ul class="grid gap-8">
+      <li v-for="menu in menus" :key="menu.id" class="flex items-center gap-4 hover:bg-white px-4 py-2 rounded">
         <i :class="menu.icon"></i>
         <NuxtLink :href="menu.path" class="">{{ menu.title }}</NuxtLink>
       </li>
